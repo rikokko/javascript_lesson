@@ -12,11 +12,18 @@
       <ul id="List">
       </ul>
     </div>
-    <script>
+    <script>    
       var ulElement = document.getElementById('List');
       var liElement = document.createElement('li');
       liElement.textContent = 'これです';
       ulElement.appendChild(liElement);
+      var aElement = document.createElement('a');
+      aElement.href= '1.html'
+      liElement.appendChild(aElement);
+      var imgElement = document.createElement('img');
+      imgElement.src = 'bookmark.png';
+      imgElement.alt = 'ブックマーク';
+      aElement.appendChild(imgElement);
     </script>
   </body>
 </html>
